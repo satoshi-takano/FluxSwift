@@ -2,7 +2,7 @@
 //  AppDelegate.swift
 //  FluxOnSwift
 //
-//  Created by 高野 智史 on 2017/10/18.
+//  Created by Satoshi Takano on 2017/10/18.
 //  Copyright © 2017年 freee. All rights reserved.
 //
 

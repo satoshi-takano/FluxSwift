@@ -7,16 +7,26 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		9316749A1F99FA5300C5C0FD /* FluxOnSwiftTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 931674991F99FA5300C5C0FD /* FluxOnSwiftTests.swift */; };
 		932754181F975270004B62BC /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 932754171F975270004B62BC /* AppDelegate.swift */; };
 		9327541A1F975270004B62BC /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 932754191F975270004B62BC /* ViewController.swift */; };
 		9327541D1F975270004B62BC /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 9327541B1F975270004B62BC /* Main.storyboard */; };
 		9327541F1F975270004B62BC /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 9327541E1F975270004B62BC /* Assets.xcassets */; };
 		932754221F975270004B62BC /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 932754201F975270004B62BC /* LaunchScreen.storyboard */; };
-		9327542D1F975271004B62BC /* FluxOnSwiftTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9327542C1F975271004B62BC /* FluxOnSwiftTests.swift */; };
+		9327543C1F975884004B62BC /* RxCocoa.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 932754381F975884004B62BC /* RxCocoa.framework */; };
+		9327543E1F975884004B62BC /* RxSwift.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 9327543A1F975884004B62BC /* RxSwift.framework */; };
+		9327543F1F975884004B62BC /* RxBlocking.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 9327543B1F975884004B62BC /* RxBlocking.framework */; };
+		932754411F9759B5004B62BC /* Result.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 932754401F9759B5004B62BC /* Result.framework */; };
+		932754441F975A63004B62BC /* Flux.swift in Sources */ = {isa = PBXBuildFile; fileRef = 932754431F975A63004B62BC /* Flux.swift */; };
+		939E37281F9A2C0E0088FF1C /* Result.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 932754401F9759B5004B62BC /* Result.framework */; };
+		939E37291F9A2C0E0088FF1C /* RxBlocking.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 9327543B1F975884004B62BC /* RxBlocking.framework */; };
+		939E372A1F9A2C0E0088FF1C /* RxCocoa.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 932754381F975884004B62BC /* RxCocoa.framework */; };
+		939E372B1F9A2C0E0088FF1C /* RxSwift.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 9327543A1F975884004B62BC /* RxSwift.framework */; };
+		939E372C1F9A2C0E0088FF1C /* RxTest.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 932754391F975884004B62BC /* RxTest.framework */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
-		932754291F975271004B62BC /* PBXContainerItemProxy */ = {
+		9316749C1F99FA5300C5C0FD /* PBXContainerItemProxy */ = {
 			isa = PBXContainerItemProxy;
 			containerPortal = 9327540C1F975270004B62BC /* Project object */;
 			proxyType = 1;
@@ -26,6 +36,9 @@
 /* End PBXContainerItemProxy section */
 
 /* Begin PBXFileReference section */
+		931674971F99FA5300C5C0FD /* FluxOnSwiftTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = FluxOnSwiftTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
+		931674991F99FA5300C5C0FD /* FluxOnSwiftTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FluxOnSwiftTests.swift; sourceTree = "<group>"; };
+		9316749B1F99FA5300C5C0FD /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		932754141F975270004B62BC /* FluxOnSwift.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = FluxOnSwift.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		932754171F975270004B62BC /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		932754191F975270004B62BC /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
@@ -33,35 +46,61 @@
 		9327541E1F975270004B62BC /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		932754211F975270004B62BC /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		932754231F975270004B62BC /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
-		932754281F975271004B62BC /* FluxOnSwiftTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = FluxOnSwiftTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		9327542C1F975271004B62BC /* FluxOnSwiftTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FluxOnSwiftTests.swift; sourceTree = "<group>"; };
 		9327542E1F975271004B62BC /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		932754381F975884004B62BC /* RxCocoa.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = RxCocoa.framework; path = Carthage/Build/iOS/RxCocoa.framework; sourceTree = "<group>"; };
+		932754391F975884004B62BC /* RxTest.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = RxTest.framework; path = Carthage/Build/iOS/RxTest.framework; sourceTree = "<group>"; };
+		9327543A1F975884004B62BC /* RxSwift.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = RxSwift.framework; path = Carthage/Build/iOS/RxSwift.framework; sourceTree = "<group>"; };
+		9327543B1F975884004B62BC /* RxBlocking.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = RxBlocking.framework; path = Carthage/Build/iOS/RxBlocking.framework; sourceTree = "<group>"; };
+		932754401F9759B5004B62BC /* Result.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Result.framework; path = Carthage/Build/iOS/Result.framework; sourceTree = "<group>"; };
+		932754431F975A63004B62BC /* Flux.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Flux.swift; sourceTree = "<group>"; };
+		932E02411F989BBD0006F658 /* XCTest.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = XCTest.framework; path = Platforms/iPhoneOS.platform/Developer/Library/Frameworks/XCTest.framework; sourceTree = DEVELOPER_DIR; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
+		931674941F99FA5300C5C0FD /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				939E37281F9A2C0E0088FF1C /* Result.framework in Frameworks */,
+				939E37291F9A2C0E0088FF1C /* RxBlocking.framework in Frameworks */,
+				939E372A1F9A2C0E0088FF1C /* RxCocoa.framework in Frameworks */,
+				939E372B1F9A2C0E0088FF1C /* RxSwift.framework in Frameworks */,
+				939E372C1F9A2C0E0088FF1C /* RxTest.framework in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
 		932754111F975270004B62BC /* Frameworks */ = {
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-			);
-			runOnlyForDeploymentPostprocessing = 0;
-		};
-		932754251F975271004B62BC /* Frameworks */ = {
-			isa = PBXFrameworksBuildPhase;
-			buildActionMask = 2147483647;
-			files = (
+				932754411F9759B5004B62BC /* Result.framework in Frameworks */,
+				9327543C1F975884004B62BC /* RxCocoa.framework in Frameworks */,
+				9327543E1F975884004B62BC /* RxSwift.framework in Frameworks */,
+				9327543F1F975884004B62BC /* RxBlocking.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		931674981F99FA5300C5C0FD /* FluxOnSwiftTests */ = {
+			isa = PBXGroup;
+			children = (
+				931674991F99FA5300C5C0FD /* FluxOnSwiftTests.swift */,
+				9316749B1F99FA5300C5C0FD /* Info.plist */,
+			);
+			path = FluxOnSwiftTests;
+			sourceTree = "<group>";
+		};
 		9327540B1F975270004B62BC = {
 			isa = PBXGroup;
 			children = (
 				932754161F975270004B62BC /* FluxOnSwift */,
 				9327542B1F975271004B62BC /* FluxOnSwiftTests */,
+				931674981F99FA5300C5C0FD /* FluxOnSwiftTests */,
 				932754151F975270004B62BC /* Products */,
+				932754371F975883004B62BC /* Frameworks */,
 			);
 			sourceTree = "<group>";
 		};
@@ -69,7 +108,7 @@
 			isa = PBXGroup;
 			children = (
 				932754141F975270004B62BC /* FluxOnSwift.app */,
-				932754281F975271004B62BC /* FluxOnSwiftTests.xctest */,
+				931674971F99FA5300C5C0FD /* FluxOnSwiftTests.xctest */,
 			);
 			name = Products;
 			sourceTree = "<group>";
@@ -83,6 +122,7 @@
 				9327541E1F975270004B62BC /* Assets.xcassets */,
 				932754201F975270004B62BC /* LaunchScreen.storyboard */,
 				932754231F975270004B62BC /* Info.plist */,
+				932754431F975A63004B62BC /* Flux.swift */,
 			);
 			path = FluxOnSwift;
 			sourceTree = "<group>";
@@ -96,9 +136,41 @@
 			path = FluxOnSwiftTests;
 			sourceTree = "<group>";
 		};
+		932754371F975883004B62BC /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				932E02411F989BBD0006F658 /* XCTest.framework */,
+				932754401F9759B5004B62BC /* Result.framework */,
+				9327543B1F975884004B62BC /* RxBlocking.framework */,
+				932754381F975884004B62BC /* RxCocoa.framework */,
+				9327543A1F975884004B62BC /* RxSwift.framework */,
+				932754391F975884004B62BC /* RxTest.framework */,
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
 /* End PBXGroup section */
 
 /* Begin PBXNativeTarget section */
+		931674961F99FA5300C5C0FD /* FluxOnSwiftTests */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 931674A01F99FA5300C5C0FD /* Build configuration list for PBXNativeTarget "FluxOnSwiftTests" */;
+			buildPhases = (
+				931674931F99FA5300C5C0FD /* Sources */,
+				931674941F99FA5300C5C0FD /* Frameworks */,
+				931674951F99FA5300C5C0FD /* Resources */,
+				939E37271F9A2BA00088FF1C /* ShellScript */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				9316749D1F99FA5300C5C0FD /* PBXTargetDependency */,
+			);
+			name = FluxOnSwiftTests;
+			productName = FluxOnSwiftTests;
+			productReference = 931674971F99FA5300C5C0FD /* FluxOnSwiftTests.xctest */;
+			productType = "com.apple.product-type.bundle.unit-test";
+		};
 		932754131F975270004B62BC /* FluxOnSwift */ = {
 			isa = PBXNativeTarget;
 			buildConfigurationList = 932754311F975271004B62BC /* Build configuration list for PBXNativeTarget "FluxOnSwift" */;
@@ -106,6 +178,7 @@
 				932754101F975270004B62BC /* Sources */,
 				932754111F975270004B62BC /* Frameworks */,
 				932754121F975270004B62BC /* Resources */,
+				932754421F9759DD004B62BC /* ShellScript */,
 			);
 			buildRules = (
 			);
@@ -115,24 +188,6 @@
 			productName = FluxOnSwift;
 			productReference = 932754141F975270004B62BC /* FluxOnSwift.app */;
 			productType = "com.apple.product-type.application";
-		};
-		932754271F975271004B62BC /* FluxOnSwiftTests */ = {
-			isa = PBXNativeTarget;
-			buildConfigurationList = 932754341F975271004B62BC /* Build configuration list for PBXNativeTarget "FluxOnSwiftTests" */;
-			buildPhases = (
-				932754241F975271004B62BC /* Sources */,
-				932754251F975271004B62BC /* Frameworks */,
-				932754261F975271004B62BC /* Resources */,
-			);
-			buildRules = (
-			);
-			dependencies = (
-				9327542A1F975271004B62BC /* PBXTargetDependency */,
-			);
-			name = FluxOnSwiftTests;
-			productName = FluxOnSwiftTests;
-			productReference = 932754281F975271004B62BC /* FluxOnSwiftTests.xctest */;
-			productType = "com.apple.product-type.bundle.unit-test";
 		};
 /* End PBXNativeTarget section */
 
@@ -144,14 +199,14 @@
 				LastUpgradeCheck = 0900;
 				ORGANIZATIONNAME = freee;
 				TargetAttributes = {
-					932754131F975270004B62BC = {
-						CreatedOnToolsVersion = 9.0;
-						ProvisioningStyle = Automatic;
-					};
-					932754271F975271004B62BC = {
+					931674961F99FA5300C5C0FD = {
 						CreatedOnToolsVersion = 9.0;
 						ProvisioningStyle = Automatic;
 						TestTargetID = 932754131F975270004B62BC;
+					};
+					932754131F975270004B62BC = {
+						CreatedOnToolsVersion = 9.0;
+						ProvisioningStyle = Automatic;
 					};
 				};
 			};
@@ -169,12 +224,19 @@
 			projectRoot = "";
 			targets = (
 				932754131F975270004B62BC /* FluxOnSwift */,
-				932754271F975271004B62BC /* FluxOnSwiftTests */,
+				931674961F99FA5300C5C0FD /* FluxOnSwiftTests */,
 			);
 		};
 /* End PBXProject section */
 
 /* Begin PBXResourcesBuildPhase section */
+		931674951F99FA5300C5C0FD /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
 		932754121F975270004B62BC /* Resources */ = {
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
@@ -185,40 +247,72 @@
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
-		932754261F975271004B62BC /* Resources */ = {
-			isa = PBXResourcesBuildPhase;
+/* End PBXResourcesBuildPhase section */
+
+/* Begin PBXShellScriptBuildPhase section */
+		932754421F9759DD004B62BC /* ShellScript */ = {
+			isa = PBXShellScriptBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
 			);
+			inputPaths = (
+				"$(SRCROOT)/Carthage/Build/iOS/RxSwift.framework",
+				"$(SRCROOT)/Carthage/Build/iOS/Result.framework",
+				"$(SRCROOT)/Carthage/Build/iOS/RxBlocking.framework",
+				"$(SRCROOT)/Carthage/Build/iOS/RxCocoa.framework",
+			);
+			outputPaths = (
+			);
 			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "/usr/local/bin/carthage copy-frameworks";
 		};
-/* End PBXResourcesBuildPhase section */
+		939E37271F9A2BA00088FF1C /* ShellScript */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+				"$(SRCROOT)/Carthage/Build/iOS/RxSwift.framework",
+				"$(SRCROOT)/Carthage/Build/iOS/Result.framework",
+				"$(SRCROOT)/Carthage/Build/iOS/RxBlocking.framework",
+				"$(SRCROOT)/Carthage/Build/iOS/RxCocoa.framework",
+				"$(SRCROOT)/Carthage/Build/iOS/RxTest.framework",
+			);
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "/usr/local/bin/carthage copy-frameworks";
+		};
+/* End PBXShellScriptBuildPhase section */
 
 /* Begin PBXSourcesBuildPhase section */
+		931674931F99FA5300C5C0FD /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				9316749A1F99FA5300C5C0FD /* FluxOnSwiftTests.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
 		932754101F975270004B62BC /* Sources */ = {
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				932754441F975A63004B62BC /* Flux.swift in Sources */,
 				9327541A1F975270004B62BC /* ViewController.swift in Sources */,
 				932754181F975270004B62BC /* AppDelegate.swift in Sources */,
-			);
-			runOnlyForDeploymentPostprocessing = 0;
-		};
-		932754241F975271004B62BC /* Sources */ = {
-			isa = PBXSourcesBuildPhase;
-			buildActionMask = 2147483647;
-			files = (
-				9327542D1F975271004B62BC /* FluxOnSwiftTests.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
 /* End PBXSourcesBuildPhase section */
 
 /* Begin PBXTargetDependency section */
-		9327542A1F975271004B62BC /* PBXTargetDependency */ = {
+		9316749D1F99FA5300C5C0FD /* PBXTargetDependency */ = {
 			isa = PBXTargetDependency;
 			target = 932754131F975270004B62BC /* FluxOnSwift */;
-			targetProxy = 932754291F975271004B62BC /* PBXContainerItemProxy */;
+			targetProxy = 9316749C1F99FA5300C5C0FD /* PBXContainerItemProxy */;
 		};
 /* End PBXTargetDependency section */
 
@@ -242,6 +336,44 @@
 /* End PBXVariantGroup section */
 
 /* Begin XCBuildConfiguration section */
+		9316749E1F99FA5300C5C0FD /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				BUNDLE_LOADER = "$(TEST_HOST)";
+				CODE_SIGN_STYLE = Automatic;
+				FRAMEWORK_SEARCH_PATHS = (
+					"$(inherited)",
+					"$(PROJECT_DIR)/Carthage/Build/iOS",
+				);
+				INFOPLIST_FILE = FluxOnSwiftTests/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = jp.co.freee.FluxOnSwiftTests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 4.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/FluxOnSwift.app/FluxOnSwift";
+			};
+			name = Debug;
+		};
+		9316749F1F99FA5300C5C0FD /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				BUNDLE_LOADER = "$(TEST_HOST)";
+				CODE_SIGN_STYLE = Automatic;
+				FRAMEWORK_SEARCH_PATHS = (
+					"$(inherited)",
+					"$(PROJECT_DIR)/Carthage/Build/iOS",
+				);
+				INFOPLIST_FILE = FluxOnSwiftTests/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = jp.co.freee.FluxOnSwiftTests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 4.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/FluxOnSwift.app/FluxOnSwift";
+			};
+			name = Release;
+		};
 		9327542F1F975271004B62BC /* Debug */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
@@ -354,6 +486,10 @@
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				CODE_SIGN_STYLE = Automatic;
+				FRAMEWORK_SEARCH_PATHS = (
+					"$(inherited)",
+					"$(PROJECT_DIR)/Carthage/Build/iOS",
+				);
 				INFOPLIST_FILE = FluxOnSwift/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
 				PRODUCT_BUNDLE_IDENTIFIER = jp.co.freee.FluxOnSwift;
@@ -368,6 +504,10 @@
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				CODE_SIGN_STYLE = Automatic;
+				FRAMEWORK_SEARCH_PATHS = (
+					"$(inherited)",
+					"$(PROJECT_DIR)/Carthage/Build/iOS",
+				);
 				INFOPLIST_FILE = FluxOnSwift/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
 				PRODUCT_BUNDLE_IDENTIFIER = jp.co.freee.FluxOnSwift;
@@ -377,41 +517,18 @@
 			};
 			name = Release;
 		};
-		932754351F975271004B62BC /* Debug */ = {
-			isa = XCBuildConfiguration;
-			buildSettings = {
-				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
-				BUNDLE_LOADER = "$(TEST_HOST)";
-				CODE_SIGN_STYLE = Automatic;
-				INFOPLIST_FILE = FluxOnSwiftTests/Info.plist;
-				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
-				PRODUCT_BUNDLE_IDENTIFIER = jp.co.freee.FluxOnSwiftTests;
-				PRODUCT_NAME = "$(TARGET_NAME)";
-				SWIFT_VERSION = 4.0;
-				TARGETED_DEVICE_FAMILY = "1,2";
-				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/FluxOnSwift.app/FluxOnSwift";
-			};
-			name = Debug;
-		};
-		932754361F975271004B62BC /* Release */ = {
-			isa = XCBuildConfiguration;
-			buildSettings = {
-				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
-				BUNDLE_LOADER = "$(TEST_HOST)";
-				CODE_SIGN_STYLE = Automatic;
-				INFOPLIST_FILE = FluxOnSwiftTests/Info.plist;
-				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
-				PRODUCT_BUNDLE_IDENTIFIER = jp.co.freee.FluxOnSwiftTests;
-				PRODUCT_NAME = "$(TARGET_NAME)";
-				SWIFT_VERSION = 4.0;
-				TARGETED_DEVICE_FAMILY = "1,2";
-				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/FluxOnSwift.app/FluxOnSwift";
-			};
-			name = Release;
-		};
 /* End XCBuildConfiguration section */
 
 /* Begin XCConfigurationList section */
+		931674A01F99FA5300C5C0FD /* Build configuration list for PBXNativeTarget "FluxOnSwiftTests" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				9316749E1F99FA5300C5C0FD /* Debug */,
+				9316749F1F99FA5300C5C0FD /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
 		9327540F1F975270004B62BC /* Build configuration list for PBXProject "FluxOnSwift" */ = {
 			isa = XCConfigurationList;
 			buildConfigurations = (
@@ -426,15 +543,6 @@
 			buildConfigurations = (
 				932754321F975271004B62BC /* Debug */,
 				932754331F975271004B62BC /* Release */,
-			);
-			defaultConfigurationIsVisible = 0;
-			defaultConfigurationName = Release;
-		};
-		932754341F975271004B62BC /* Build configuration list for PBXNativeTarget "FluxOnSwiftTests" */ = {
-			isa = XCConfigurationList;
-			buildConfigurations = (
-				932754351F975271004B62BC /* Debug */,
-				932754361F975271004B62BC /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
 			defaultConfigurationName = Release;

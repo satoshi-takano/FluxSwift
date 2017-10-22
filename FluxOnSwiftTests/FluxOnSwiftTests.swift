@@ -2,14 +2,15 @@
 //  FluxOnSwiftTests.swift
 //  FluxOnSwiftTests
 //
-//  Created by 高野 智史 on 2017/10/18.
+//  Created by Satoshi Takano on 2017/10/20.
 //  Copyright © 2017年 freee. All rights reserved.
 //
 
 import XCTest
 @testable import FluxOnSwift
+import Result
 
-class FluxOnSwiftTests: XCTestCase {
+class TodoStoreTest: XCTestCase {
     
     override func setUp() {
         super.setUp()
@@ -21,16 +22,43 @@ class FluxOnSwiftTests: XCTestCase {
         super.tearDown()
     }
     
-    func testExample() {
-        // This is an example of a functional test case.
-        // Use XCTAssert and related functions to verify your tests produce the correct results.
+    func testFetch() {
+        let store = ToDoStore()
+        XCTAssertTrue(store.todos.value.isEmpty)
+        
+        ToDoAction.Fetch().dispatch(Result(value: [
+            ToDo(text: "foo"),
+            ToDo(text: "bar")
+        ]))
+        
+        XCTAssertEqual(store.todos.value.count, 2)
+        XCTAssertEqual(store.todos.value.first?.text, "foo")
+        XCTAssertEqual(store.todos.value.last?.text, "bar")
     }
     
-    func testPerformanceExample() {
-        // This is an example of a performance test case.
-        self.measure {
-            // Put the code you want to measure the time of here.
-        }
+    func testAdd() {
+        let store = ToDoStore()
+        XCTAssertTrue(store.todos.value.isEmpty)
+        XCTAssertEqual(store.addedIndex, -1)
+        
+        ToDoAction.Add(text: "").dispatch(Result(value: ToDo(text: "foo")))
+        XCTAssertEqual(store.todos.value.count, 1)
+        XCTAssertEqual(store.todos.value.first?.text, "foo")
+        XCTAssertEqual(store.addedIndex, 0)
     }
     
+    func testDelete() {
+        let store = ToDoStore()
+        ToDoAction.Fetch().dispatch(Result(value: [
+            ToDo(text: "foo"),
+            ToDo(text: "bar")
+        ]))
+        XCTAssertEqual(store.todos.value.count, 2)
+        XCTAssertEqual(store.deletedIndex, -1)
+        
+        ToDoAction.Delete(index: 0).dispatch(Result(value: 0))
+        XCTAssertEqual(store.todos.value.count, 1)
+        XCTAssertEqual(store.todos.value.first?.text, "bar")
+        XCTAssertEqual(store.deletedIndex, 0)
+    }
 }
