@@ -10,6 +10,15 @@ import XCTest
 @testable import FluxOnSwift
 import Result
 
+extension ActionBase {
+    static func dispatch(_ result: Result<Payload, ActionError>) {
+        Dispatcher.shared.post(
+            name: self.name,
+            object: result
+        )
+    }
+}
+
 class TodoStoreTest: XCTestCase {
     
     override func setUp() {
@@ -26,7 +35,7 @@ class TodoStoreTest: XCTestCase {
         let store = ToDoStore()
         XCTAssertTrue(store.todos.value.isEmpty)
         
-        ToDoAction.Fetch().dispatch(Result(value: [
+        ToDoAction.Fetch.dispatch(Result(value: [
             ToDo(text: "foo"),
             ToDo(text: "bar")
         ]))
@@ -41,7 +50,7 @@ class TodoStoreTest: XCTestCase {
         XCTAssertTrue(store.todos.value.isEmpty)
         XCTAssertEqual(store.addedIndex, -1)
         
-        ToDoAction.Add(text: "").dispatch(Result(value: ToDo(text: "foo")))
+        ToDoAction.Add.dispatch(Result(value: ToDo(text: "foo")))
         XCTAssertEqual(store.todos.value.count, 1)
         XCTAssertEqual(store.todos.value.first?.text, "foo")
         XCTAssertEqual(store.addedIndex, 0)
@@ -49,7 +58,7 @@ class TodoStoreTest: XCTestCase {
     
     func testDelete() {
         let store = ToDoStore()
-        ToDoAction.Fetch().dispatch(Result(value: [
+        ToDoAction.Fetch.dispatch(Result(value: [
             ToDo(text: "foo"),
             ToDo(text: "bar")
         ]))

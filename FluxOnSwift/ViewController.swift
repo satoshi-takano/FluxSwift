@@ -23,7 +23,7 @@ struct ToDoAction {
                 self.dispatch(Result(value: result))
             }, onError: { error in
                 self.dispatch(Result(error: NSError.error(from: error)))
-            }).completedValue()
+            }).map { _ in () }
         }
         
         private func fetchDefaultItems() -> Observable<[ToDo]> {
