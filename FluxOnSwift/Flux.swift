@@ -41,9 +41,10 @@ class Dispatcher: NotificationCenter {
     static let shared = Dispatcher()
 }
 extension Dispatcher {
-    func rx_notification<T: ActionBase>(_ action: T.Type) -> Observable<Result<T.Payload, T.ActionError>> {
-        return rx.notification(action.name).map { notification in
-            let object = notification.object as! Result<T.Payload, T.ActionError>
+    func rx_notification<T: ActionBase>(_ action: T.Type)
+        -> Observable<Result<T.Payload, T.ActionError>> {
+        return rx.notification(action.name).map { n in
+            let object = n.object as! Result<T.Payload, T.ActionError>
             return object
         }
     }

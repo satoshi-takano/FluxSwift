@@ -64,43 +64,46 @@ final class ToDoStore {
     init() {
         let d = Dispatcher.shared
         
-        d.rx_notification(ToDoAction.Fetch.self).subscribe(onNext: { [weak self] result in
-            switch result {
-            case .success(let todos):
-                self?.resetIndices()
-                self?.todos.value = todos
-            default:
-                break
-            }
-        }).disposed(by: disposeBag)
+        d.rx_notification(ToDoAction.Fetch.self)
+            .subscribe(onNext: { [weak self] result in
+                switch result {
+                case .success(let todos):
+                    self?.resetIndices()
+                    self?.todos.value = todos
+                default:
+                    break
+                }
+            }).disposed(by: disposeBag)
         
-        d.rx_notification(ToDoAction.Add.self).subscribe(onNext: { [weak self] result in
-            switch result {
-            case .success(let todo):
-                self?.resetIndices()
+        d.rx_notification(ToDoAction.Add.self)
+            .subscribe(onNext: { [weak self] result in
+                switch result {
+                case .success(let todo):
+                    self?.resetIndices()
 
-                let current = self?.todos.value ?? []
-                self?.addedIndex = current.count
-                self?.todos.value = current + [todo]
-            default:
-                break
-            }
-        }).disposed(by: disposeBag)
+                    let current = self?.todos.value ?? []
+                    self?.addedIndex = current.count
+                    self?.todos.value = current + [todo]
+                default:
+                    break
+                }
+            }).disposed(by: disposeBag)
         
-        d.rx_notification(ToDoAction.Delete.self).subscribe(onNext: { [weak self] result in
-            switch result {
-            case .success(let index):
-                guard let `self` = self else { return }
-                self.resetIndices()
-                
-                self.deletedIndex = index
-                var todos = self.todos.value
-                todos.remove(at: index)
-                self.todos.value = todos
-            default:
-                break
-            }
-        }).disposed(by: disposeBag)
+        d.rx_notification(ToDoAction.Delete.self)
+            .subscribe(onNext: { [weak self] result in
+                switch result {
+                case .success(let index):
+                    guard let `self` = self else { return }
+                    self.resetIndices()
+
+                    self.deletedIndex = index
+                    var todos = self.todos.value
+                    todos.remove(at: index)
+                    self.todos.value = todos
+                default:
+                    break
+                }
+            }).disposed(by: disposeBag)
     }
     
     private func resetIndices() {
